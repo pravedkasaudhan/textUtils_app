@@ -43,8 +43,6 @@ function App() {
   return (
     <>
     hello this is react tutorial
-    this is first branch of git tutorial branch1
-    created branch 2
       <Navbar title="Praved Converter" detail="this is string converter" mode={mode} toggle={toggleMode} />
       {/* <Alert alert={alert} />
       <TextEntry mode={mode} updateAlert={setMessage} /> */}
