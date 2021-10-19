@@ -42,6 +42,7 @@ function App() {
   }
   return (
     <>
+    hello this is react tutorial
       <Navbar title="Praved Converter" detail="this is string converter" mode={mode} toggle={toggleMode} />
       {/* <Alert alert={alert} />
       <TextEntry mode={mode} updateAlert={setMessage} /> */}
