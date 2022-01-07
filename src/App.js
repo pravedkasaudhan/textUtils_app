@@ -2,14 +2,14 @@ import './App.css';
 import Navbar from './Component/Navbar'
 import TextEntry from './Component/TextEntry';
 import Alert from './Component/Alert';
-import About from './Component/About';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 // import About from './Component/About';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
+
 import { useState } from 'react';
 function App() {
   const [mode, setMode] = useState("light");
@@ -42,23 +42,22 @@ function App() {
   }
   return (
     <>
-    hello this is react tutorial
       <Navbar title="Praved Converter" detail="this is string converter" mode={mode} toggle={toggleMode} />
       {/* <Alert alert={alert} />
       <TextEntry mode={mode} updateAlert={setMessage} /> */}
       {/* <About/> */}
-      <Router>
-        <Switch>
-          <Route path="/About">
-            <About />
-          </Route>
-          <Route path="/">
+      {/* <Router> */}
+        {/* <Switch> */}
+          {/* <Route path="/About"> */}
+            {/* <About /> */}
+          {/* </Route> */}
+          {/* <Route path="/"> */}
             {/* <Navbar title="Praved Converter" detail="this is string converter" mode={mode} toggle={toggleMode} /> */}
             <Alert alert={alert} />
             <TextEntry mode={mode} updateAlert={setMessage} />
-          </Route>
-        </Switch>
-      </Router>
+          {/* </Route> */}
+        {/* </Switch> */}
+      {/* </Router> */}
     </>
   );
 }
